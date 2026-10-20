@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "causal-natural-gas-forecasting"
+version = "0.1.0"
+description = "Leakage-resistant multi-horizon natural-gas forecasting research"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+    "databento>=0.70",
+    "interpret-core>=0.7,<0.8",
+    "joblib>=1.4",
+    "lightgbm>=4.6",
+    "matplotlib>=3.10",
+    "numpy>=2",
+    "pandas>=2.2",
+    "pyarrow>=18",
+    "scikit-learn>=1.7",
+    "tabulate>=0.9",
+    "xlrd>=2.0.1",
+]
+
+[tool.setuptools]
+py-modules = [
+    "advanced_backtest",
+    "advanced_data",
+    "advanced_estimators",
+    "build_augmented_data",
+    "build_five_year_data",
+    "daily_context",
+    "daily_models",
+    "download_auxiliary",
+    "download_extended_history",
+    "download_natgas",
+    "predict_context",
+    "train_advanced",
+    "train_context",
+]
